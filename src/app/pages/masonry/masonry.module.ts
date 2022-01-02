@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MasonryComponent } from './masonry.component';
-
+import { MasonryRoutingModule } from './masonry-routing.module';
 
 
 @NgModule({
-  declarations: [
-    MasonryComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [],
+    imports: [
+        CommonModule,
+        MasonryRoutingModule
+    ],
+
 })
 export class MasonryModule { }

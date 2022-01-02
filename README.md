@@ -88,12 +88,21 @@
                 ├── home.component.spec.ts
                 ├── home.component.ts
                 ├── home.component.css
+                ├── home-routing.module.ts
             ├── masonry
                 ├── masonry.module.ts
                 ├── masonry.component.html
                 ├── masonry.component.spec.ts
                 ├── masonry.component.ts
                 ├── masonry.component.css
+                ├── masonry-routing.module.ts
+            ├── not-found
+                ├── not-found.module.ts
+                ├── not-found.component.html
+                ├── not-found.component.spec.ts
+                ├── not-found.component.ts
+                ├── not-found.component.css
+                ├── not-found-routing.module.ts
         ├── nonSharedComponents 
 ├── .browserlistsrc 
 ├── .editorconfig 
