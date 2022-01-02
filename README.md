@@ -11,3 +11,15 @@
 2. Pages 
     - HomePage 
     - MasonryPage
+
+├── node_modules
+|   ├── TODOS LOS MODULOS DE NODE
+├── src
+│   ├── app 
+│   │   ├── shared 
+│   │   |   ├── header
+│   │   |   |   ├── header.module.ts
+│   │   |   |   ├── header.component.html
+│   │   |   |   ├── header.component.spec.ts
+│   │   |   |   ├── header.component.ts
+│   │   |   |   ├── header.component.css         
