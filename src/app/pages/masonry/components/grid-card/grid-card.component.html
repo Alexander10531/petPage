@@ -1,0 +1,15 @@
+<div class="column-container">
+    <div 
+        *ngFor="let img of imagesCard; let i = index"
+        class="containerImage">
+        <a [href]="img">
+            <div class="overpolappedContent"></div>
+            <img class="doggo-image" [src]="img">
+            <div class="iconContainer">
+                <fa-icon 
+                    [icon]="faHeart"
+                    class="heartIcon"></fa-icon>
+            </div>
+        </a>
+    </div>
+</div>

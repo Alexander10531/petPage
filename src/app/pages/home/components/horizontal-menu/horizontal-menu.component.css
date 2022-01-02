@@ -1,0 +1,146 @@
+#container-horMenu{
+    /* height: 200px; */
+    display: flex;
+    padding: 20px 0px;
+    border-radius: 10px;
+    background: var(--GPurple);
+    margin: 0px var(--defaultPadding) var(--defaultMargin) var(--defaultPadding);
+}
+
+#container-horMenu div{
+    color: white;
+    display: inherit;
+}
+
+#container-horMenu div:nth-of-type(1){
+    padding: 10px;
+    max-width: 25%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#container-horMenu div:nth-of-type(1) h3{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#container-horMenu div:nth-of-type(2){
+    width: 100%;
+}
+
+.select-action{
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+    display: inherit;
+    justify-content: center;
+}
+
+.select-action li{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    width: calc((100% / 3) - 1%);
+    border: 3px solid transparent;
+}
+
+.select-action li:hover{
+    background-color: var(--BPurple);
+    /* border-radius: 15px; */
+}
+
+.select-action li:focus-visible{
+    outline: none;
+    border: 3px solid var(--CPurple);
+}
+
+.select-action li a:focus-visible{
+    outline: none;
+}
+
+/* .select-action h4{
+    margin: 5px 0px 0px 0px;
+} */
+
+.select-action a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.st0DogCircle{
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+}
+
+.st1DogCircle{
+    fill: #FFFFFF;
+}
+
+.st2DogCircle{
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+}
+
+.st3DogCircle{
+    fill: white;
+}
+
+.svgDogCircle{
+    --dimensionSvg: 75px; 
+    overflow: visible;
+    width: var(--dimensionSvg);
+    height: var(--dimensionSvg);
+}
+
+.strokeWidth{
+    stroke-width: 10px;
+}
+
+.st0Arrow{
+    fill:#FFFFFF;
+    stroke:transparent;
+    stroke-miterlimit:10;
+    transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 800px){
+    #container-horMenu{
+        flex-direction: column;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+
+    #container-horMenu div:nth-of-type(1){
+        width: 100%;
+        max-width: none;
+    }
+
+    #container-horMenu div:nth-of-type(1) h3{
+        width: 100%;
+        text-align: center;
+    }
+
+    .select-action{
+        flex-direction: column;
+    }
+
+    .select-action li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .textGoTo{
+        display: none;
+    }
+}

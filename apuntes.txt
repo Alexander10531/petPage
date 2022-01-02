@@ -1,1 +1,26 @@
-1. https://anabelisa.co/readme/
+* Definir que componentes seran componentes cargados por lazy load.
+    1. Modulos 
+	1. Pagina principal. 
+		Componentes requeridos.
+		1.1 Header 
+		1.2 Hero image
+		1.3 Card selection 
+		1.4 Horizontal Menu
+		1.5 Footer 
+		1.6 Loading Component
+	2. Pagina imagenes.
+		1.1 Header 
+		1.2 Loading component
+		1.4 Masonry container
+	4. Pagina 40x,30x
+
+* Agregar valores de las imagenes dentro de localstore para que cuando se 
+haga return no se pierdan todos los valores. 
+* Como hacer para que no se recargue si no que este quede igual y se renderice lo que 
+con anterioridad se habia renderizado. 
+* Realizar revisiones en el html para mejora del SEO. 
+* Realizar un filtrado con pipe para el filtrado de direcciones url que vengan repetidas. 
+* Realizar texto de pagina web
+* Implementar pantalla de carga.
+* Implementar loading component.
+* Implementar busqueda. 

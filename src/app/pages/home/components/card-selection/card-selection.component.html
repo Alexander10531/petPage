@@ -1,0 +1,14 @@
+<section>
+    <div class="petSelection">
+        <a *ngFor = "let cardData of dataCards"
+            class="link-selection"
+            href="">
+            <div class="shadowContainer">
+                <h2>{{ cardData.name }}</h2>
+            </div>
+            <article>
+                <img [src]="cardData.imgUrl" alt="dog_opt">
+            </article>
+        </a>
+    </div>
+</section>

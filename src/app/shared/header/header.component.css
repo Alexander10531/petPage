@@ -1,0 +1,118 @@
+*{
+    list-style: none;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.st0{
+    fill:none;
+    stroke:#FFF;
+    stroke-width: 2px;
+    stroke-miterlimit:10;
+}
+
+.st1{
+    fill:#FFF;
+    stroke-width: 2px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background: var(--DPurple);
+    padding: 5px var(--defaultPadding);
+
+}
+.searchContainer{
+    width: 350px;
+    height: 45px;
+    display: inherit;
+    position: relative;
+    border-radius: 30px;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px 0px 0px auto;
+    background: var(--EPurple);
+}
+
+#searchInput{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: inherit;
+    border-radius: 30px;
+}
+
+#searchInput input::-webkit-input-placeholder{
+    color: white;
+    font-family: var(--titleFont);
+}
+
+#searchInput input{
+    width: 100%;
+    color: white;
+    font-size: 14px;    
+    font-weight: bold;
+    padding: 0px 10px;
+    border-radius: 30px;
+    background: transparent;
+    border: 3px solid transparent;
+}
+
+#searchInput input:focus-visible{
+    outline: none;
+    border: 3px solid var(--CPurple);
+}
+
+#searchInput input:focus-visible + .selection-container{
+    display: block;
+}
+
+.selection-container:hover{
+    display: block;
+}
+
+#searchIcon{
+    color: white;
+    cursor: text;
+    --widthIcon : 16px;
+    position: absolute;
+    left: calc(100% - (var(--widthIcon) + 10px));
+}
+
+.sticky {
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    width: calc(100% - 40px);
+}
+
+.selection-list a{ 
+    display: block;
+    color: white;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.selection-list a:hover{
+    background-color: var(--CPurple);
+}
+
+.no-search-found{
+    text-align: center;
+    padding: 5px;
+}
+
+.selection-container{
+    top: 46px;
+    width: 100%;
+    display: none;
+    padding: 5px 0px;
+    position: absolute;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: var(--APurple);
+}

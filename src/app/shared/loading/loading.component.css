@@ -1,0 +1,30 @@
+#loadingScreen{
+    background-color: var(--DPurple);
+    overflow: hidden;
+    text-align: center;
+}
+
+#loadingScreen h1{
+    color: white;
+    margin: 10px 0px;
+    font-family: var(--titleFont);
+}
+
+.dogPawSvg{
+    width:290.1px;
+    overflow:visible;
+}
+
+.st0DogPaw{
+    fill:none;
+    stroke-width:5;
+    stroke:white;
+    stroke-miterlimit:10;
+}
+
+.st1DogPaw{
+    fill:white;
+    stroke:white;
+    stroke-miterlimit:10;
+}
+

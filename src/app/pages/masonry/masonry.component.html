@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div
+    #masonryContainer
+    class="masonryContainer">
+    <app-grid-card
+    *ngFor="let j of columnsNumber; let i = index"
+    [iColumn]='i'>
+    </app-grid-card>
+</div>

@@ -1,0 +1,26 @@
+.masonryContainer{
+    --padding-top : 110x;
+    --cols : 3;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    padding: 70px 50px;
+    box-sizing: border-box;
+    grid-template-columns: repeat(var(--cols), 1fr);
+}
+
+.col-1{
+    --cols : 1;
+}
+
+.col-2{
+    --cols : 2;
+}
+
+.col-3{
+    --cols : 3;
+}
+
+.col-4{
+    --cols : 4;
+}

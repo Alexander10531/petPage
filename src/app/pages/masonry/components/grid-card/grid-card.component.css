@@ -1,0 +1,50 @@
+.doggo-image{
+    width: 100%
+}
+
+.containerImage{
+    animation-name: fadeIn;
+    margin: 30px 0px;
+}
+
+.containerImage:hover .overpolappedContent{
+    width: 100%;
+}
+
+.overpolappedContent{
+    opacity: .4;
+    position: absolute;
+    background-color: black;
+    height: calc(100% - 4px);
+    cursor: pointer;
+}
+
+.containerImage{
+    position: relative;
+}
+
+.iconContainer{
+    top: 10px;
+    z-index: 1;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.heartIcon{
+    color: var(--ARed);
+    font-size: 25px;
+}
+
+.heartIcon:hover{
+    color: red;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

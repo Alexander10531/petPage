@@ -1,0 +1,37 @@
+ul{
+    height: 100%;
+    list-style: none;
+}
+
+footer{
+    height: 75px;
+    display: flex;
+    color: white;
+    padding: 0px 20px;
+    background-color: var(--EPurple);
+}
+
+footer div:nth-of-type(1){
+    display: flex;
+}
+
+footer div:nth-of-type(2){
+    display: inherit;
+    margin: auto;
+}
+
+.list-logos{
+    height: 100%;
+    display: inherit;
+    align-items: center;
+}
+
+.list-logos a{
+    font-size: 30px;
+    color: white;
+}
+
+.list-logos li{
+    margin: 5px;
+    cursor: pointer;
+}

@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    /* Main color */
+    --APurple: #A36BD2;
+    --BPurple: #9556CC;
+    --CPurple: #8841C5;
+    --DPurple: #7B2CBF;
+    --EPurple: #6F28AC;
+    --GPurple: #622399;
+    --HPurple: #4C1A77;
+    
+    /* Warning color */
+    --AYellow: #E4BD7F; 
+    --BYellow: #E1B36D;
+    --CYellow: #DDAA5A;
+    --DYellow: #D9A048;
+    --EYellow: #C39041;
+    --FYellow: #AE803A;
+    --GYellow: #987032;
+    
+    /* Error color */
+    --ARed: #FF5487;
+    --BRed: #FF3B76;
+    --CRed: #FF2365;
+    --DRed: #FF0A54;
+    --ERed: #E6094C;
+    --FRed: #CC0843;
+    --GRed: #B3073B;
+
+    /* Successful color */
+    --AGreen: #5ED28A;
+    --BGreen: #47CC79; 
+    --CGreen: #30C569;
+    --DGreen: #19BF58;
+    --EGreen: #17AC4F;
+    --FGreen: #149946;
+    --GGreen: #12863E;
+
+    /* Margin and paddigns */
+    --defaultMargin : 60px;
+    --defaultPadding : 20px;
+
+    /* Fonts */
+    --contentFont: 'Maven Pro', sans-serif;
+    --titleFont: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--titleFont);
+}
