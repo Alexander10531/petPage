@@ -88,7 +88,7 @@
                 ├── home.component.spec.ts
                 ├── home.component.ts
                 ├── home.component.css
-            ├── masonryContainer
+            ├── masonry
                 ├── masonry.module.ts
                 ├── masonry.component.html
                 ├── masonry.component.spec.ts
