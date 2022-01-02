@@ -16,7 +16,13 @@
 ├── node_modules
     ├── TODOS LOS MODULOS DE NODE
 ├── src
-    ├── app 
+    ├── app
+        ├── app-component.css
+        ├── app-component.html
+        ├── app-component.spec.ts
+        ├── app-component.ts
+        ├── app-module.ts
+        ├── app-routing.module.ts
         ├── shared 
             ├── header
                 ├── header.module.ts
@@ -35,10 +41,4 @@
                     ├── loading.component.spec.ts
                     ├── loading.component.ts
                     ├── loading.component.css
-                        ├── app-routing.module.ts
-            ├── app-component.css
-            ├── app-component.html
-            ├── app-component.spec.ts
-            ├── app-component.ts
-            ├── app-module.ts
 ```
