@@ -16,6 +16,17 @@
 ├── node_modules
     ├── TODOS LOS MODULOS DE NODE
 ├── src
+    ├── favicon.ico
+    ├── index.html
+    ├── main.ts
+    ├── polyfills.ts   
+    ├── styles.css
+    ├── test.ts
+    ├── enviroments 
+        ├── enviroment.prod.ts
+        ├── enviroment.ts
+    ├── assets
+        ├── .gitkeep
     ├── app
         ├── app-component.css
         ├── app-component.html
@@ -41,4 +52,14 @@
                     ├── loading.component.spec.ts
                     ├── loading.component.ts
                     ├── loading.component.css
+├── .browserlistsrc 
+├── .editorconfig 
+├── .gitignore
+├── angular.json 
+├── karma.conf.js 
+├── package-lock.json 
+├── package.json 
+├── README.MD 
+├── tsconfig.app.json
+├── tsconfig.spec.json
 ```
