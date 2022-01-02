@@ -95,14 +95,21 @@
                 ├── masonry.component.spec.ts
                 ├── masonry.component.ts
                 ├── masonry.component.css
+<<<<<<< HEAD
                 ├── masonry-routing.module.ts
             ├── not-found
+=======
+            ├── notFound
+>>>>>>> 2174ab498aa0b9032a5ddcc7e82eca8e691c65e5
                 ├── not-found.module.ts
                 ├── not-found.component.html
                 ├── not-found.component.spec.ts
                 ├── not-found.component.ts
                 ├── not-found.component.css
+<<<<<<< HEAD
                 ├── not-found-routing.module.ts
+=======
+>>>>>>> 2174ab498aa0b9032a5ddcc7e82eca8e691c65e5
         ├── nonSharedComponents 
 ├── .browserlistsrc 
 ├── .editorconfig 
