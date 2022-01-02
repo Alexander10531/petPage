@@ -74,14 +74,14 @@
                 ├── home.component.html
                 ├── home.component.spec.ts
                 ├── home.component.ts
-                ├── home.component.css                
-        ├── nonSharedComponents
+                ├── home.component.css
             ├── masonryContainer
                 ├── masonry.module.ts
                 ├── masonry.component.html
                 ├── masonry.component.spec.ts
                 ├── masonry.component.ts
                 ├── masonry.component.css
+        ├── nonSharedComponents
 ├── .browserlistsrc 
 ├── .editorconfig 
 ├── .gitignore
