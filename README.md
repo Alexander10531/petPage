@@ -23,5 +23,22 @@
                 ├── header.component.html
                 ├── header.component.spec.ts
                 ├── header.component.ts
-                ├── header.component.css         
+                ├── header.component.css
+            ├── footer
+                    ├── footer.module.ts
+                    ├── footer.component.html
+                    ├── footer.component.spec.ts
+                    ├── footer.component.ts
+                    ├── footer.component.css
+            ├── loading
+                    ├── loading.component.html
+                    ├── loading.component.spec.ts
+                    ├── loading.component.ts
+                    ├── loading.component.css
+                        ├── app-routing.module.ts
+            ├── app-component.css
+            ├── app-component.html
+            ├── app-component.spec.ts
+            ├── app-component.ts
+            ├── app-module.ts
 ```
