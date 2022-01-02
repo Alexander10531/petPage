@@ -64,24 +64,37 @@
                 ├── footer.component.ts
                 ├── footer.component.css
             ├── loading
+                ├── loading.module.ts
                 ├── loading.component.html
                 ├── loading.component.spec.ts
                 ├── loading.component.ts
                 ├── loading.component.css
+            ├── image
+                ├── image.module.ts
+                ├── image.component.html
+                ├── image.component.spec.ts
+                ├── image.component.ts
+                ├── image.component.css
+            ├── masonry
+                ├── masonry.module.ts
+                ├── masonry.component.html
+                ├── masonry.component.spec.ts
+                ├── masonry.component.ts
+                ├── masonry.component.css
         ├── pages
             ├── home
                 ├── footer.module.ts
                 ├── home.component.html
                 ├── home.component.spec.ts
                 ├── home.component.ts
-                ├── home.component.css                
-        ├── nonSharedComponents
-            ├── masonryContainer
+                ├── home.component.css
+            ├── masonry
                 ├── masonry.module.ts
                 ├── masonry.component.html
                 ├── masonry.component.spec.ts
                 ├── masonry.component.ts
                 ├── masonry.component.css
+        ├── nonSharedComponents 
 ├── .browserlistsrc 
 ├── .editorconfig 
 ├── .gitignore
@@ -93,6 +106,9 @@
 ├── tsconfig.app.json
 ├── tsconfig.spec.json
 ```
+
+**NOTESE QUE EN LA CARPETA SHARED Y PAGE SE ENCUENTRAN 2 MODULOS CON NOMBRE MASONRY TENGA EN CUENTA QUE EN SHARED SE ENCUENTRA UNICAMENTE LA LOGICA NECESARIA 
+PARA PODER RENDERIZAR LOS COMPONENTES EN LA CARPETA PAGES SE ENCUENTRA EL RENDERIZADO TOTAL DE LA PAGINA.**
 
 ## Enrutamiento. 
 
