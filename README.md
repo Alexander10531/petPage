@@ -4,13 +4,13 @@
 **Siguiendo la estructura de un proyecto desarrollado en ionic, se hara un proyecto donde cada uno de los componentes sera un modulo para realizar carga perezosa**
 
 1.  Componentes compartidos. (Shared)
-    1.1 Header
-    1.2 footer 
-    1.3 Loading Logo
+    1. Header
+    1. footer 
+    1. Loading Logo
 
 2. Pages 
-    2.1 HomePage 
-    2.2 MasonryPage
+    2. HomePage 
+    2. MasonryPage
 
 Estructura de directorios
     ++++ node_modules
