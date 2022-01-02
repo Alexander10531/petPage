@@ -12,7 +12,7 @@
     - HomePage 
     - MasonryPage
 
-´´´
+```
 ├── node_modules
 |   ├── TODOS LOS MODULOS DE NODE
 ├── src
@@ -24,4 +24,4 @@
 │   │   |   |   ├── header.component.spec.ts
 │   │   |   |   ├── header.component.ts
 │   │   |   |   ├── header.component.css         
-´´´
+```
