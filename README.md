@@ -64,10 +64,23 @@
                 ├── footer.component.ts
                 ├── footer.component.css
             ├── loading
+                ├── loading.module.ts
                 ├── loading.component.html
                 ├── loading.component.spec.ts
                 ├── loading.component.ts
                 ├── loading.component.css
+            ├── image
+                ├── image.module.ts
+                ├── image.component.html
+                ├── image.component.spec.ts
+                ├── image.component.ts
+                ├── image.component.css
+            ├── masonry
+                ├── masonry.module.ts
+                ├── masonry.component.html
+                ├── masonry.component.spec.ts
+                ├── masonry.component.ts
+                ├── masonry.component.css
         ├── pages
             ├── home
                 ├── footer.module.ts
@@ -81,7 +94,7 @@
                 ├── masonry.component.spec.ts
                 ├── masonry.component.ts
                 ├── masonry.component.css
-        ├── nonSharedComponents
+        ├── nonSharedComponents 
 ├── .browserlistsrc 
 ├── .editorconfig 
 ├── .gitignore
