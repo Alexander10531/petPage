@@ -3,12 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoadingComponent } from './shared/loading/loading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoadingComponent,
   ],
   imports: [
     BrowserModule,

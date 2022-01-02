@@ -41,6 +41,8 @@
         ├── app-component.ts
         ├── app-module.ts
         ├── app-routing.module.ts
+        ├── interfaces
+           ├── ... 
         ├── service
             ├── httpService
                 ├── services-http.service.spec.ts
@@ -119,3 +121,9 @@ Se declararan algunos servicios para distintos motivos.
     entre componentes hijo/padre, padre/hijo y hermano/hermano
 
     ** LOS COMPONENTES QUE REQUIERAN DE ESTOS SERVICIOS SE IRAN LISTANDO DURANTE EL DESARROLLO ** 
+
+## Interfaces 
+    
+    Estas interfaces se usaran para poder establecer el tipado de las variables definidas.
+
+    ** LAS INTERFACES DECLARADAS SE IRAN LISTANDO SEGUN SEA CONVENIENTE PARA EL DESARROLLO DEL PROYECTO **
