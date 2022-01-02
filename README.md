@@ -9,5 +9,5 @@
     - Loading Logo
 
 2. Pages 
-    2. HomePage 
-    2. MasonryPage
+    - HomePage 
+    - MasonryPage
