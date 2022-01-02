@@ -63,3 +63,12 @@
 ├── tsconfig.app.json
 ├── tsconfig.spec.json
 ```
+
+## Enrutamiento. 
+
+```
+├──── /
+├──── /home 
+├──── /masonry 
+    ├──── /breed  
+```
