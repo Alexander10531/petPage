@@ -168,3 +168,11 @@ Se declararan algunos servicios para distintos motivos.
     Estas interfaces se usaran para poder establecer el tipado de las variables definidas.
 
     ** LAS INTERFACES DECLARADAS SE IRAN LISTANDO SEGUN SEA CONVENIENTE PARA EL DESARROLLO DEL PROYECTO **
+    
+## Dependencias de cada uno de las paginas en sus modulos. 
+    ### Carpeta shared
+        1. header
+        
+    ### Carpeta pages
+        1. Home
+            . Header
