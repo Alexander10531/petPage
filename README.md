@@ -7,6 +7,10 @@
     - Header
     - footer 
     - Loading Logo
+    - image
+    - Masonry content
+    - Card image
+    - Secondary card
 
 2. Paginas (Pages) 
 
@@ -81,6 +85,18 @@
                 ├── masonry.component.spec.ts
                 ├── masonry.component.ts
                 ├── masonry.component.css
+            ├── image-card
+                ├── image-card.module.ts
+                ├── image-card.component.html
+                ├── image-card.component.spec.ts
+                ├── image-card.component.ts
+                ├── image-card.component.css
+            ├── secondary-card
+                ├── secondary-card.module.ts
+                ├── secondary-card.component.html
+                ├── secondary-card.component.spec.ts
+                ├── secondary-card.component.ts
+                ├── secondary-card.component.css
         ├── pages
             ├── home
                 ├── footer.module.ts
