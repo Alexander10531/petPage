@@ -175,4 +175,4 @@ Se declararan algunos servicios para distintos motivos.
         
     ### Carpeta pages
         1. Home
-            . Header
+            - Header
