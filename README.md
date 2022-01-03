@@ -172,5 +172,5 @@ Estas interfaces se usaran para poder establecer el tipado de las variables defi
 1. header        
 
 ### Carpeta pages
-  1. Home
-    - Header
+1. Home
+- Header
