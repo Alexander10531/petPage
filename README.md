@@ -170,6 +170,7 @@ Estas interfaces se usaran para poder establecer el tipado de las variables defi
 ## Dependencias de cada uno de las paginas en sus modulos. 
 ### Carpeta shared
 1. header        
-    ### Carpeta pages
-    1. Home
-      - Header
+
+### Carpeta pages
+  1. Home
+    - Header
