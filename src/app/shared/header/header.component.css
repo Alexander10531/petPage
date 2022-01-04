@@ -46,14 +46,21 @@ header{
 }
 
 .st0-line{
-    fill:#FFFFFF;
-    stroke:#1D1D1B;
-    stroke-miterlimit:10;
+    stroke: white;
+    stroke-width: 3px;
 }
 
 .hambutton{
     background: transparent;
     border: 1px solid transparent;
+}
+
+.hambutton:focus-visible{
+    outline: none;
+}
+
+.hambutton:focus-visible .st0-line{
+    stroke: var(--A-Purple);
 }
 
 @media only screen and (max-width:450px) {
