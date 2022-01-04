@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --A-Purple: #4C1A77;
+    --B-Purple: #622399;
+    --C-Purple: #6F28AC;
+    --D-Purple: #7B2CBF;
+    --E-Purple: #8841C5;
+    --F-Purple: #9556CC;
+    --G-Purple: #A36BD2;
+    --heigth-header: 75px;
+}
