@@ -35,8 +35,13 @@ export class SearchInputComponent implements OnInit {
         let actualBreed : string[] = [];
         if(this.breedList){
             actualBreed = this.breedList.filter((value) => value.includes(this.searchingValue))
-            return actualBreed.splice(0,4);
+            if(actualBreed.length > 0){
+                console.log("Aqui?")
+                return actualBreed.splice(0,4);
+            }
+            console.log("¿O aqui?")
+            return undefined
         }
-        return [];
+        return undefined;
     }
 }

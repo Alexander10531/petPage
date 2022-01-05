@@ -6,13 +6,19 @@
         type="text"
         placeholder="¿Desea buscar por raza?">
     <div
-        id="c0ntain3r"
-        *ngIf="breedList != undefined" 
         class="breed-information">
-        <a
-            class="link-search"
-            *ngFor="let i of getList" >
-                <span>{{ i | titlecase}}</span>
-        </a>
+        <ng-container
+            *ngIf="getList">
+            <a
+                class="link-search"
+                *ngFor="let i of getList" >
+                    <span>{{ i | titlecase}}</span>
+            </a>
+        </ng-container>
+        <span
+            class="notBreedFound"
+            *ngIf="!getList">
+            ¡No se encontro lo que esta buscando! :c
+        </span>
     </div>
 </div>

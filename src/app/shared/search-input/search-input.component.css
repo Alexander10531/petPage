@@ -53,3 +53,8 @@
 .breed-information a:focus-visible{
     background: var(--D-Purple);
 }
+
+.notBreedFound{
+    display: block;
+    padding: 10px 5px;
+}
