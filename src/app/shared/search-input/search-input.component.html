@@ -1,0 +1,18 @@
+<div class="ml-auto input-container">
+    <input
+        #searchingInput 
+        (focus)="renderInfo($event)"
+        (keyup)="renderInfo($event)"
+        type="text"
+        placeholder="¿Desea buscar por raza?">
+    <div
+        id="c0ntain3r"
+        *ngIf="breedList != undefined" 
+        class="breed-information">
+        <a
+            class="link-search"
+            *ngFor="let i of getList" >
+                <span>{{ i | titlecase}}</span>
+        </a>
+    </div>
+</div>

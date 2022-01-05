@@ -44,11 +44,13 @@ header{
 }
 
 @media only screen and (max-width:450px) {
+    
+    .collapse-input{
+        display: none;
+    }
+
     .logo{
         margin-left: auto;
-    }
-    .input-container{
-        display: none;
     }
 
     .hambutton{

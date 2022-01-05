@@ -1,0 +1,55 @@
+.input-container{
+    color: white;
+    position: relative;
+}
+
+.input-container input{ 
+    height: 45px;
+    width: 300px;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 45px;
+    box-sizing: border-box;
+    transition: border-radius .5s;
+    border: 2px solid var(--B-Purple);
+    background-color: var(--C-Purple);
+}
+
+.input-container input::placeholder{
+    color: white;
+}
+
+.input-container input:focus-visible{
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--A-Purple);
+}
+
+.input-container input:focus-visible + .breed-information{
+    display: block;
+}
+
+.breed-information{
+    width: 100%;
+    display: none;
+    padding: 10px 0px;
+    position: absolute;
+    background: var(--F-Purple);
+}
+
+.breed-information a{
+    width: 100%;
+    color: white;
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.breed-information a:hover{
+    background: var(--D-Purple);
+}
+
+.breed-information a:focus-visible{
+    background: var(--D-Purple);
+}

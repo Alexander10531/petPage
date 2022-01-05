@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ServiceComponentService } from 'src/app/service/serviceComponent/service-component.service';
-import { HttpServiceService } from '../../service/httpService/http-service.service';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +8,10 @@ import { HttpServiceService } from '../../service/httpService/http-service.servi
 })
 export class HeaderComponent{
 
+    breedList : any[] | undefined;
     constructor(
-        private httpService : HttpServiceService,
-        private serviceComponent : ServiceComponentService){}
+        private serviceComponent : ServiceComponentService){
+        }
     
     setState(){
         this.serviceComponent.setDisplaySidebar();

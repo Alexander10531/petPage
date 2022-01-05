@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
+import { SearchInputModule } from '../search-input/search-input.module';
 
 @NgModule({
     declarations: [
-        HeaderComponent
+        HeaderComponent,
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        SearchInputModule,
     ], 
     exports: [
         HeaderComponent, 
