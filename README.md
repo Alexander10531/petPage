@@ -97,6 +97,18 @@
                 ├── secondary-card.component.spec.ts
                 ├── secondary-card.component.ts
                 ├── secondary-card.component.css
+            ├── sidebar
+                ├── sidebar-card.module.ts
+                ├── sidebar-card.component.html
+                ├── sidebar-card.component.spec.ts
+                ├── sidebar-card.component.ts
+                ├── sidebar.component.css
+            ├── search-input
+                ├── search-input.module.ts
+                ├── search-input.component.html
+                ├── search-input.component.spec.ts
+                ├── search-input.component.ts
+                ├── search-input.component.css
         ├── pages
             ├── home
                 ├── footer.module.ts
