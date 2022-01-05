@@ -1,15 +1,20 @@
 <header>
-    <button class="hambutton">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
-	    height="23px" viewBox="0 0 30 23" style="overflow:visible;enable-background:new 0 0 30 23;" xml:space="preserve">
+    <button
+        (click)="setState()"
+        class="hambutton">
+    <svg 
+        x="0px" 
+        y="0px" 
+        width="30px"
+	    height="23px" 
+        viewBox="0 0 30 23" 
+        xml:space="preserve">
 <g>
 	<line class="st0-line" x1="0" y1="1.5" x2="30" y2="1.5"/>
 	<line class="st0-line" x1="0" y1="11.5" x2="30" y2="11.5"/>
 	<line class="st0-line" x1="0" y1="21.5" x2="30" y2="21.5"/>
 </g>
 </svg>
-
-
     </button>
     <a 
         href=""
@@ -46,7 +51,7 @@
             </g>
         </svg>
     </a>
-    <div class="input-container">
+    <div class="ml-auto input-container">
         <input 
             type="text"
             placeholder="¿Desea buscar por raza?">

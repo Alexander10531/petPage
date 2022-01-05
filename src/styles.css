@@ -13,3 +13,34 @@
     --G-Purple: #A36BD2;
     --heigth-header: 75px;
 }
+
+.input-container{
+    color: white;
+}
+
+.input-container input{ 
+    height: 45px;
+    width: 300px;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 45px;
+    box-sizing: border-box;
+    border: 2px solid var(--B-Purple);
+    background-color: var(--C-Purple);
+}
+
+.input-container input::placeholder{
+    color: white;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-none{ 
+    display: none;
+}

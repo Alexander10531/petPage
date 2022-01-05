@@ -1,9 +1,18 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class ServiceComponentService {
 
-  constructor() { }
+    private displaySidebar : boolean = false; 
+    constructor() { }
+
+    getdisplaySidebar(){
+        return this.displaySidebar;
+    }
+
+    setDisplaySidebar(){
+        this.displaySidebar = !this.displaySidebar;
+    }
 }

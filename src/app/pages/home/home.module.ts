@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HeaderModule } from 'src/app/shared/header/header.module';
 import { HomeComponent } from './home.component';
+import { SidebarComponent } from 'src/app/shared/sidebar/sidebar.component';
 
 @NgModule({
     declarations: [
-        HomeComponent, 
+        HomeComponent,
+        SidebarComponent,
     ],
     imports: [
         HeaderModule,

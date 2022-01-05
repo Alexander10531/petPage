@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { ServiceComponentService } from 'src/app/service/serviceComponent/service-component.service';
 import { HttpServiceService } from '../../service/httpService/http-service.service';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,7 +10,11 @@ import { HttpServiceService } from '../../service/httpService/http-service.servi
 export class HeaderComponent{
 
     constructor(
-        private httpService : HttpServiceService){
+        private httpService : HttpServiceService,
+        private serviceComponent : ServiceComponentService){}
+    
+    setState(){
+        this.serviceComponent.setDisplaySidebar();
     }
 
 }
