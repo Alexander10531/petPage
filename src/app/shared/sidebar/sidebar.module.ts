@@ -10,6 +10,9 @@ import { SearchInputModule } from '../search-input/search-input.module';
     imports: [
         CommonModule, 
         SearchInputModule,
+    ],
+    exports:[
+        SidebarComponent,
     ]
 })
 export class SidebarModule { }

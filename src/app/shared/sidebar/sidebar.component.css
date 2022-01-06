@@ -25,6 +25,46 @@ aside{
     background-color: rgba(00, 00, 00, .45);
 }
 
+.con-input-close{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.st1-close{
+    fill:white;
+}
+
+.button-close{
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.button-close:focus-visible{
+    outline: none;
+}
+
+.button-close:focus-visible>svg .st1-close{
+    fill: #c9c1c1;
+}
+
+.close-button{
+    padding: 0px 5px;
+}
+
+.close-button button{
+    color: white;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.close-button button:focus-visible{
+    color: #c9c1c1;
+    outline: none;
+}
+
 @keyframes slideIn{
     from{left:-100%;}
     to{left: 0%;}

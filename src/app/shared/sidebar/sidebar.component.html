@@ -6,7 +6,16 @@
         class="background">
     </div>
     <aside>
-        <!-- En esta parte agregaremos todo lo asociado a los input, pero tenemos que 
-        desarrollar una pantalla responsive -->
+        <app-search-input
+            class="input-sidebar">
+        </app-search-input><br>
+        <ul>
+            <li class="close-button">
+                <button
+                    (click)="setStateSidebar()">
+                    Cerrar
+                </button>
+            </li>
+        </ul>
     </aside>
 </div>

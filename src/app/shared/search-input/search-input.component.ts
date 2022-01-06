@@ -1,4 +1,3 @@
-import { OnInit } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { ViewChild } from '@angular/core';
 
@@ -10,21 +9,27 @@ import { HttpServiceService } from 'src/app/service/httpService/http-service.ser
   templateUrl: './search-input.component.html',
   styleUrls: ['./search-input.component.css']
 })
-export class SearchInputComponent implements OnInit {
+export class SearchInputComponent{
 
-    breedList : any[] | undefined; 
+    constador : number = 1;
+    breedList : string[] | undefined; 
     searchingValue : string = "";
     @ViewChild('searchingInput') searchingInput! : ElementRef; 
 
     constructor(
         private httpService : HttpServiceService
     ){
-        this.httpService.getBreedList().subscribe((resp)=>{
-            this.breedList = Object.keys(resp);
-        })
-    }
-
-    ngOnInit(): void {
+        if(!sessionStorage.getItem('breed')){
+            this.httpService.getBreedList().subscribe((resp)=>{
+                this.breedList = Object.keys(resp);
+                sessionStorage.setItem("breed", JSON.stringify(this.breedList));
+            })
+        }else{
+            let localBreed = sessionStorage.getItem('breed');
+            if(localBreed){
+                this.breedList = JSON.parse(localBreed);
+            }
+        }
     }
 
     renderInfo(event : any){
@@ -32,16 +37,15 @@ export class SearchInputComponent implements OnInit {
     }
 
     get getList() : string[] | undefined{
+        this.constador = this.constador + 1;
         let actualBreed : string[] = [];
         if(this.breedList){
             actualBreed = this.breedList.filter((value) => value.includes(this.searchingValue))
+            
             if(actualBreed.length > 0){
-                console.log("Aqui?")
                 return actualBreed.splice(0,4);
             }
-            console.log("¿O aqui?")
-            return undefined
         }
-        return undefined;
+        return undefined
     }
 }
