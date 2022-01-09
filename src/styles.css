@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root{
@@ -11,7 +12,9 @@
     --E-Purple: #8841C5;
     --F-Purple: #9556CC;
     --G-Purple: #A36BD2;
+    
     --heigth-header: 75px;
+
 }
 
 .ml-auto{
