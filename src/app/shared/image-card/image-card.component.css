@@ -1,0 +1,49 @@
+.container-gif{
+    gap: 25px;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.gif{
+    flex-wrap: wrap;
+    display: inherit;
+    position: relative;
+}
+
+.gif img{
+    display: flex;
+    border-radius: 10px;
+}
+
+.cover{
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--A-Purple);
+}
+
+.container-text{
+    top: 50%;
+    width: 100%;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.link-card:focus-visible{
+    outline: none;
+    border-radius: 13px;
+}
+
+.link-card:focus-visible .cover{
+    opacity: 75%;
+}
+
+.link-card:hover .cover{
+    opacity: 75%;
+}

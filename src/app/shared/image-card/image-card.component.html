@@ -1,1 +1,27 @@
-<p>image-card works!</p>
+<div class="container-gif">
+    <a 
+        *ngFor="let i of imageCard"
+        class="link-card"
+        href="">
+        <div class="gif">
+            <img [src]="i.url" width="100%">
+            <div class="cover">
+            </div>
+            <div class="container-text">
+                <h3>{{ i.text }}</h3>
+            </div>
+        </div>
+    </a>
+    <!-- <a 
+        class="link-card"
+        href="">
+        <div class="gif">
+            <img src="../../../assets/gif/dogs_2_800.gif" width="100%">
+            <div class="cover">
+            </div>
+            <div class="container-text">
+                <h3>Lorem ipsum.</h3>
+            </div>
+        </div>
+    </a> -->
+</div>

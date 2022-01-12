@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { IimageCard } from '../../interface/cardImage';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent{
 
-  constructor() { }
+    imageCard : IimageCard[] = [
+            {
+                url : "../../../assets/gif/dogs_1_800.gif",
+                text : "Este es el 1",
+            },
+            {
+                url: "../../../assets/gif/dogs_2_800.gif",
+                text: "Este es el 2"
+            }
+        ]
 
-  ngOnInit(): void {
-  }
+    constructor() { }
 
 }
