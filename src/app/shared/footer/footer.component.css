@@ -7,11 +7,16 @@ footer{
     background: var(--D-Purple);
 }
 
-footer a{
+.footer-links a{
     font-size: 25px;
+    cursor: pointer;
     color: #CACACA;
     margin-right: 5px;
     text-decoration: none;
+}
+
+.footer-links{
+    z-index: 1;
 }
 
 .footer-text, .footer-links{

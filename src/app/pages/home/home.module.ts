@@ -7,6 +7,7 @@ import { HeaderModule } from 'src/app/shared/header/header.module';
 import { SidebarModule } from 'src/app/shared/sidebar/sidebar.module';
 import { ImageCardModule } from 'src/app/shared/image-card/image-card.module';
 import { FooterModule } from 'src/app/shared/footer/footer.module';
+import { LoadingModule } from 'src/app/shared/loading/loading.module';
 
 @NgModule({
     declarations: [
@@ -16,6 +17,7 @@ import { FooterModule } from 'src/app/shared/footer/footer.module';
         CommonModule,
         FooterModule,
         HeaderModule,
+        LoadingModule, 
         SidebarModule,
         ImageCardModule,
         HomeRoutingModule,
