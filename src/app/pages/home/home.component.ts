@@ -11,11 +11,11 @@ export class HomeComponent{
     imageCard : IimageCard[] = [
             {
                 url : "../../../assets/gif/dogs_1_800.gif",
-                text : "Este es el 1",
+                text : "Ternura...",
             },
             {
                 url: "../../../assets/gif/dogs_2_800.gif",
-                text: "Este es el 2"
+                text: "...Y lealtad"
             }
         ]
 

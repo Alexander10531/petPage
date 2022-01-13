@@ -47,6 +47,10 @@
     opacity: 75%;
 }
 
+.container-text span{
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 550px){
     .container-gif{
         flex-wrap: wrap;

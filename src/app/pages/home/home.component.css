@@ -39,11 +39,35 @@
 
 .ligth-button{
     color: white;
+    font-weight: 500;
     border-radius: 5px;
     padding: 10px 20px;
-    font-weight: 500;
     text-decoration: none;
     border: 1px solid white;
+}
+
+.ligth-button:focus-visible{
+    outline: none;
+    border: 2px solid white;
+}
+
+.ligth-button:hover{
+    border: 2px solid white;
+}
+
+.titleImageCard{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titleImageCard h3{
+    font-size: 25px;
+    color: var(--D-Black);
+}
+
+.titleImageCard h4{
+    font-size: 20px;
+    color: var(--E-Black);
 }
 
 .subtTitle-hero{    

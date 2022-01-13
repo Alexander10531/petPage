@@ -12,9 +12,17 @@
     --E-Purple: #8841C5;
     --F-Purple: #9556CC;
     --G-Purple: #A36BD2;
-    
-    --heigth-header: 75px;
 
+    --A-Black: #151414;
+    --B-Black: #181616;
+    --C-Black: #1B1919;
+    --D-Black: #1E1C1C;
+    --E-Black: #353333;
+    --F-Black: #4B4949;
+    --G-Black: #626060;
+
+    --heigth-header: 75px;
+    
 }
 
 .ml-auto{
