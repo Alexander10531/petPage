@@ -1,0 +1,39 @@
+.image-container{
+    z-index: 0;
+    width: 300px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+}
+
+.cover{
+    top:0px;
+    z-index: 1;
+    width: 100%;
+    opacity: 50%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.cover:hover{
+    opacity: 20%;
+    background: var(--G-Purple);
+}
+
+.icon-image{
+    z-index: 2;
+    top: 10px;
+    position: absolute;
+    left: calc(100% - 35px);
+}
+
+.heartIcon{
+    color: red;
+    font-size: 25px;
+}

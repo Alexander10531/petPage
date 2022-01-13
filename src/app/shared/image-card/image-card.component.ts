@@ -1,5 +1,4 @@
 import { Input } from '@angular/core';
-import { OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { IimageCard } from '../../interface/cardImage';
 
@@ -8,14 +7,10 @@ import { IimageCard } from '../../interface/cardImage';
   templateUrl: './image-card.component.html',
   styleUrls: ['./image-card.component.css']
 })
-export class ImageCardComponent implements OnInit{
+export class ImageCardComponent{
 
     @Input() imageCard! : IimageCard[];
     
-    ngOnInit(): void {
-        console.log(this.imageCard)
-    }
-
     getImageCard(){
         return this.imageCard; 
     }
