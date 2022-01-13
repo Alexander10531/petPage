@@ -7,7 +7,6 @@
 }
 
 .gif{
-    flex-wrap: wrap;
     display: inherit;
     position: relative;
 }
@@ -46,4 +45,10 @@
 
 .link-card:hover .cover{
     opacity: 75%;
+}
+
+@media only screen and (max-width: 550px){
+    .container-gif{
+        flex-wrap: wrap;
+    }
 }
