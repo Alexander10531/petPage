@@ -1,3 +1,5 @@
+// ['akita', 'australian', 'buhund', 'cattledog', 'cockapoo', 'cotondetulear', 'dalmatian', 
+// 'frise', 'havanese', 'finnish', 'labradoodle', 'shiba', 'pitbull', 'tervuren', 'waterdog']
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, Subject } from 'rxjs';
@@ -8,8 +10,10 @@ import { Observable, Subject } from 'rxjs';
 })
 export class HttpServiceService {
 
-    private urlBreed : string = "https://dog.ceo/api/breeds/list/all";
     private breedList = new Subject<any[]>();
+    private urlReqByBreed_2 : string = "/images/random/";
+    private urlReqByBreed_1 : string = "https://dog.ceo/api/breed/";
+    private urlBreed : string = "https://dog.ceo/api/breeds/list/all";
 
     constructor(
         private httpClient : HttpClient,
@@ -31,4 +35,7 @@ export class HttpServiceService {
         return this.breedList.asObservable();
     }
 
+    petitionTest(breed : string) : Observable<any>{
+        return this.httpClient.get(`${this.urlReqByBreed_1}${breed}${this.urlReqByBreed_2}50`);
+    }
 }
