@@ -1,16 +1,18 @@
-// ['akita', 'australian', 'buhund', 'cattledog', 'cockapoo', 'cotondetulear', 'dalmatian', 
-// 'frise', 'havanese', 'finnish', 'labradoodle', 'shiba', 'pitbull', 'tervuren', 'waterdog']
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, Subject } from 'rxjs';
-// import { Observable } from 'rxjs';
+import { Observable } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpServiceService {
 
-    private breedList = new Subject<any[]>();
+    private bannedBreeds : string[] = [
+        'akita', 'australian', 'buhund', 'cattledog', 'cockapoo', 'cotondetulear', 'dalmatian', 
+        'frise', 'havanese', 'finnish', 'labradoodle', 'shiba', 'pitbull', 'tervuren', 'waterdog'
+    ];
+    private breedList = new Subject<string[]>();
     private urlReqByBreed_2 : string = "/images/random/";
     private urlReqByBreed_1 : string = "https://dog.ceo/api/breed/";
     private urlBreed : string = "https://dog.ceo/api/breeds/list/all";
@@ -21,21 +23,30 @@ export class HttpServiceService {
         this.setBreedList();
     }
 
-    setBreedList(){
+    public setBreedList(){
+        
         this.obtainBreed().subscribe(({ message }) => {
+            message = Object.keys(message);
+            for(let i = 0; i < message.length; i++){
+                if(message.includes(this.bannedBreeds[i])){
+                    message.splice(message.indexOf(this.bannedBreeds[i]),1);
+                }
+            }
             this.breedList.next(message);
         })
+
     }
 
-    obtainBreed() : Observable<any>{
+    public obtainBreed() : Observable<any>{
         return this.httpClient.get(this.urlBreed);
     }
 
-    getBreedList() : Observable<any[]>{
+    public getBreedList() : Observable<any[]>{ 
         return this.breedList.asObservable();
     }
 
-    petitionTest(breed : string) : Observable<any>{
-        return this.httpClient.get(`${this.urlReqByBreed_1}${breed}${this.urlReqByBreed_2}50`);
+    public getBannedBreed() : string[]{
+        return this.bannedBreeds
     }
+
 }

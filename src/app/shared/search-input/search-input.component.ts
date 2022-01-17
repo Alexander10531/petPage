@@ -21,8 +21,8 @@ export class SearchInputComponent{
     ){
         if(!sessionStorage.getItem('breed')){
             this.httpService.getBreedList().subscribe((resp)=>{
-                this.breedList = Object.keys(resp);
-                sessionStorage.setItem("breed", JSON.stringify(this.breedList));
+                this.breedList = resp;
+                sessionStorage.setItem("breed", JSON.stringify(resp));
             })
         }else{
             let localBreed = sessionStorage.getItem('breed');
