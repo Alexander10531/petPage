@@ -9,7 +9,7 @@ const ROUTES: Routes = [
         loadChildren: ()=> import('./pages/home/home.module').then(m => m.HomeModule)
     },
     {
-        path: 'images',
+        path: 'images/:breed',
         loadChildren: ()=> import('./pages/masonry/masonry.module').then(m => m.MasonryModule),
     },
     {

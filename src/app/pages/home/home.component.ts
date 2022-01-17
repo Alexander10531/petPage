@@ -10,12 +10,14 @@ export class HomeComponent{
 
     imageCard : IimageCard[] = [
             {
-                url : "../../../assets/gif/dogs_1_800.gif",
                 text : "Ternura...",
+                urlBreed : "randomBreed",
+                url : "../../../assets/gif/dogs_1_800.gif",
             },
             {
+                text: "...Y lealtad",
+                urlBreed : "randomBreed",
                 url: "../../../assets/gif/dogs_2_800.gif",
-                text: "...Y lealtad"
             }
         ]
 

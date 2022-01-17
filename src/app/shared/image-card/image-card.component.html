@@ -2,7 +2,7 @@
     <a 
         *ngFor="let i of imageCard"
         class="link-card"
-        href="">
+        [routerLink]="['/images', i.urlBreed]">
         <div class="gif">
             <img [src]="i.url" width="100%">
             <div class="cover">

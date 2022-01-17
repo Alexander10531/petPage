@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SearchInputComponent } from './search-input.component';
-
 
 
 @NgModule({
@@ -9,7 +9,8 @@ import { SearchInputComponent } from './search-input.component';
         SearchInputComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule, 
     ],
     exports: [
         SearchInputComponent,

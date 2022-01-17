@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ServiceComponentService {
 
     private displaySidebar : boolean = false; 
-    constructor() { }
+    constructor() {}
 
     getdisplaySidebar(){
         return this.displaySidebar;

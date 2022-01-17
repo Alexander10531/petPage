@@ -11,7 +11,8 @@
             *ngIf="getList">
             <a
                 class="link-search"
-                *ngFor="let i of getList" >
+                *ngFor="let i of getList"
+                [routerLink]="['/images', i]">
                     <span>{{ i | titlecase}}</span>
             </a>
         </ng-container>

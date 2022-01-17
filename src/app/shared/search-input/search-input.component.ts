@@ -12,8 +12,8 @@ import { HttpServiceService } from 'src/app/service/httpService/http-service.ser
 export class SearchInputComponent{
 
     constador : number = 1;
-    breedList : string[] | undefined; 
     searchingValue : string = "";
+    breedList : string[] | undefined; 
     @ViewChild('searchingInput') searchingInput! : ElementRef; 
 
     constructor(

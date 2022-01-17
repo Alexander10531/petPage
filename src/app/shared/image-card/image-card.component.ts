@@ -9,8 +9,7 @@ import { IimageCard } from '../../interface/cardImage';
 })
 export class ImageCardComponent{
 
-    @Input() imageCard! : IimageCard[];
-    
+    @Input() imageCard! : IimageCard[];    
     getImageCard(){
         return this.imageCard; 
     }

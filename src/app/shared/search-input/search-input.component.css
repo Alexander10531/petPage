@@ -61,6 +61,10 @@
     padding: 10px 5px;
 }
 
+.breed-information:hover{
+    display: block;
+}
+
 @media only screen and (max-width: 400px){
     .input-container input{
         width: 100%;
