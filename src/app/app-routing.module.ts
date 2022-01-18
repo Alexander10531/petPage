@@ -12,10 +12,10 @@ const ROUTES: Routes = [
         path: 'images/:breed',
         loadChildren: ()=> import('./pages/masonry/masonry.module').then(m => m.MasonryModule),
     },
-    {
-        path: '**',
-        loadChildren: ()=> import('./pages/not-found/not-found.module').then(m => m.NotFoundModule),
-    },
+    // {
+    //     path: '**',
+    //     loadChildren: ()=> import('./pages/not-found/not-found.module').then(m => m.NotFoundModule),
+    // },
 ];
 
 @NgModule({

@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class HttpServiceService {
-
+    // https://dog.ceo/api/breeds/image/random/3
     private bannedBreeds : string[] = [
         'akita', 'australian', 'buhund', 'cattledog', 'cockapoo', 'cotondetulear', 'dalmatian', 
         'frise', 'havanese', 'finnish', 'labradoodle', 'shiba', 'pitbull', 'tervuren', 'waterdog'
@@ -16,6 +16,7 @@ export class HttpServiceService {
     private urlReqByBreed_2 : string = "/images/random/";
     private urlReqByBreed_1 : string = "https://dog.ceo/api/breed/";
     private urlBreed : string = "https://dog.ceo/api/breeds/list/all";
+    private randomDogs : string = "https://dog.ceo/api/breeds/image/random/";
 
     constructor(
         private httpClient : HttpClient,
@@ -49,4 +50,11 @@ export class HttpServiceService {
         return this.bannedBreeds
     }
 
+    public getDogsByBreed(breed : string | undefined, numberImage = 30) : Observable<any>{
+        if(breed){
+            return this.httpClient.get(`${ this.urlReqByBreed_1 }${ breed }${ this.urlReqByBreed_2 }${ numberImage }`);
+        }else{
+            return this.httpClient.get(`${ this.randomDogs }${ numberImage }`);
+        }
+    }
 }

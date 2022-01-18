@@ -29,7 +29,7 @@ export class LoadingComponent implements AfterViewInit{
             this.cleanClass(i, "paw-fill");
             this.render2.addClass(this.pawElements[i].nativeElement, "paw-fill");
             this.pawElements.length - 1 == i ? i = 0 : i = i + 1;
-        }, 400)
+        }, 50)
     }
 
     cleanClass(actualIndex : number, removerClass : string){

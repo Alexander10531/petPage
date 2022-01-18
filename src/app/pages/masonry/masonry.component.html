@@ -1,2 +1,26 @@
 <app-header></app-header>
-<app-image></app-image>
+<div class="container-masonry">
+    <div
+        *ngIf="!loadingComponent" 
+        class="container-loading">
+            <div class="loading">
+                <app-loading
+                    heigthLoading="150px">
+                </app-loading>
+                <span>Cargando...</span>
+            </div>
+    </div>
+    <ng-container
+        *ngIf="loadingComponent">
+            <div
+            #columnMasonry
+            *ngFor="let i of columnsImage" 
+            class="column-masonry">
+            <app-image
+                [image]="j"
+                class="image-masonry"
+                *ngFor="let j of i">
+            </app-image>
+        </div>
+    </ng-container>
+</div>

@@ -5,6 +5,7 @@ import { MasonryComponent } from './masonry.component';
 import { SidebarModule } from 'src/app/shared/sidebar/sidebar.module';
 import { MasonryRoutingModule } from './masonry-routing.module';
 import { ImageModule } from 'src/app/shared/image/image.module';
+import { LoadingModule } from 'src/app/shared/loading/loading.module';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ImageModule } from 'src/app/shared/image/image.module';
         ImageModule,
         CommonModule,
         HeaderModule,
+        LoadingModule,
         SidebarModule,
         MasonryRoutingModule, 
     ],

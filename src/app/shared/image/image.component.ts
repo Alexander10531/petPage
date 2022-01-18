@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component } from '@angular/core';
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons'
@@ -9,7 +10,7 @@ import { IconDefinition } from '@fortawesome/free-regular-svg-icons'
 })
 export class ImageComponent{
 
+    @Input() image! : string;
     faHeart : IconDefinition = faHeart; 
-    constructor() { }
 
 }

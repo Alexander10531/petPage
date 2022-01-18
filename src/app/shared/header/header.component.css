@@ -1,7 +1,11 @@
 header{
+    z-index: 2;
+    width: 100vw;
     display: flex;
+    position: fixed;
     padding: 0px 20px;
     align-items: center;
+    box-sizing: border-box;
     height: var(--heigth-header);
     background-color: var(--D-Purple);
 }

@@ -1,7 +1,7 @@
 .image-container{
     z-index: 0;
-    width: 300px;
     display: flex;
+    margin: 10px 0px;
     position: relative;
     border-radius: 10px;
 }
@@ -19,6 +19,7 @@
 
 .image-container img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .cover:hover{
@@ -36,4 +37,14 @@
 .heartIcon{
     color: red;
     font-size: 25px;
+}
+
+.link-image:focus-visible{
+    outline: none;
+}
+
+.link-image:focus-visible  .cover{
+    opacity: 20%;
+    outline: none;
+    background: var(--G-Purple);
 }
